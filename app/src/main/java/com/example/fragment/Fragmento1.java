@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 
 
 
-public class Fragmento1 extends Fragment {
+public class Fragmento1 extends Fragment implements View.OnClickListener{
 
     TextView tv1;
     EditText ed1;
@@ -27,7 +27,14 @@ public class Fragmento1 extends Fragment {
         tv1 = v.findViewById(R.id.textView);
         ed1 = v.findViewById(R.id.editTextTextPersonName);
         b1 = v.findViewById(R.id.button);
+        b1.setOnClickListener(this);
         return v;
     }
+
+    @Override
+    public void onClick(View view) {
+
+    }
+
 
 }
