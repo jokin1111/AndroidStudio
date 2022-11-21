@@ -10,7 +10,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    @SuppressLint("ResourceType")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,13 +18,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void uno(View v){
-        Intent intent1 = new Intent();
+        Intent intent1 = new Intent(this, MainActivity2.class);
         intent1.putExtra("clave", "uno");
         startActivity(intent1);
     }
 
     public void dos(View v){
-        Intent intent1 = new Intent();
+        Intent intent1 = new Intent(this, MainActivity2.class);
         intent1.putExtra("clave", "dos");
         startActivity(intent1);
     }

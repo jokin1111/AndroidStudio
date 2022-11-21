@@ -19,7 +19,7 @@ public class MainActivity2 extends AppCompatActivity {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
 
-        ft.add(R.id.contenedor, fr1, "Fragmento1");
+        ft.add(R.id.contenedor2, fr1, "Fragmento1");
 
 
         String s = getIntent().getStringExtra("clave");
