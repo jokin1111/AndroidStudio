@@ -5,9 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.app.Fragment;
+import androidx.fragment.app.Fragment;
 
-import com.example.fragment.R;
+
 
 public class Fragmento1 extends Fragment {
 
