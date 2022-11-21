@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,14 +15,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Fragmento1 fr = new Fragmento1();
-
-        FragmentManager fm = getSupportFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-
-        ft.add(R.id.contenedor, fr, "Fragmento1");
-        ft.commit();
     }
 
+    public void uno(View v){
+        Intent intent1 = new Intent();
+        intent1.putExtra("clave", "uno");
+        startActivity(intent1);
+    }
+
+    public void dos(View v){
+        Intent intent1 = new Intent();
+        intent1.putExtra("clave", "dos");
+        startActivity(intent1);
+    }
 }
