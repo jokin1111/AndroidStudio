@@ -33,5 +33,8 @@ public class Fragmento2 extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View view) {
 
+        String s = String.valueOf(ed2.getText());
+        tv2.setText("Hola " + s);
+
     }
 }

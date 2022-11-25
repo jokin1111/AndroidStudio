@@ -34,6 +34,10 @@ public class Fragmento1 extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View view) {
 
+        String s =  String.valueOf(ed1.getText());
+        int i = s.length();
+        tv1.setText(String.valueOf(i));
+
     }
 
 
